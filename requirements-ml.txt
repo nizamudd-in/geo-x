@@ -1,0 +1,29 @@
+# GeoSense-X ML requirements — generated 2026-07-11
+# Install with:
+#   pip install -r requirements-ml.txt
+#
+# For CUDA 12.8 (torch 2.11.0+cu128):
+#   pip install torch==2.11.0+cu128 torchvision==0.26.0+cu128 torchaudio==2.11.0+cu128 \
+#       --index-url https://download.pytorch.org/whl/cu128
+
+# --- PyTorch (CUDA 12.8 build) ---
+# Install separately via the command above; not on PyPI as a plain name.
+# torch==2.11.0+cu128
+# torchvision==0.26.0+cu128
+# torchaudio==2.11.0+cu128
+
+# --- Core ML / numeric ---
+numpy==1.26.4
+scipy==1.17.1
+scikit-learn==1.9.0
+
+# --- FAISS (CPU build; CUDA search done via PyTorch then CPU indexing) ---
+faiss-cpu==1.8.0
+
+# --- Data loading ---
+pandas==3.0.3
+pyarrow==24.0.0
+Pillow==10.4.0
+
+# --- Progress / utilities ---
+tqdm==4.68.4

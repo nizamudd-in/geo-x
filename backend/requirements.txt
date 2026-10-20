@@ -1,0 +1,24 @@
+# GeoSense-X Backend — Phase 1 MVP Dependencies
+# Install: pip install -r requirements.txt
+
+# Web framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# Settings
+pydantic-settings==2.5.2
+
+# ML
+torch==2.4.1
+torchvision==0.19.1
+
+# FAISS (CPU version — swap for faiss-gpu if CUDA is available)
+faiss-cpu==1.8.0
+
+# Image processing
+Pillow==10.4.0
+numpy==1.26.4
+
+# SAR GeoTIFF support (optional but recommended for real SAR data)
+rasterio==1.3.11
